@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helios Smart Power Monitor</title>
+    <style>
+        /* Reset default browser spacing */
+        
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            /* Prevents double scrollbars */
+            font-family: sans-serif;
+        }
+        /* SteelBlue Navbar */
+        
+        .navbar {
+            background-color: #4682B4;
+            color: white;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .navbar img {
+            height: 40px;
+            margin-right: 15px;
+        }
+        
+        .navbar h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        /* Full page iframe container */
+        
+        .iframe-container {
+            height: calc(100vh - 60px);
+            /* Full height minus navbar */
+            width: 100%;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="helios.png" alt="Helios Logo">
+        <h1>Helios Smart Power Monitor</h1>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://script.google.com/macros/s/AKfycbyfXIknyxC1DDZ0wPjBzSFSfwgN052CzalZtfJMmhzoo6JE0h6Af1ZUAy7nS_tFrUNF2A/exec"></iframe>
+    </div>
+
+</body>
+
+</html>
